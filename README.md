@@ -19,6 +19,26 @@ nested REDEFINES. Zero data egress.**
 
 ---
 
+## Quick Start
+
+The engine ships as an 840 KB air-gapped Docker tarball. No cloud. No API keys.
+
+```bash
+# Download and verify
+curl -O https://killsesh.com/downloads/killsesh-enterprise-v0.1.0.tar.gz
+curl https://killsesh.com/downloads/SHA256SUMS | shasum -a 256 -c
+
+# Run
+docker compose up
+# → frontend at http://localhost:3000
+# → drop any .CPY from samples/ onto the upload zone
+```
+
+Watch the live trace of the engine solving ACORD_AL3_NIGHTMARE.CPY:
+→ **[killsesh.com/demo](https://killsesh.com/demo)**
+
+---
+
 ## Architecture
 
 ```
